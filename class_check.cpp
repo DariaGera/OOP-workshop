@@ -107,6 +107,9 @@ int main(){
 	//apple.Construct_product("PB664", a.Amount_control(), 100, prod_name, 6, 12);		
 	
 	}
+	catch (logic_error &exp){
+		cout<<"Problem is ("<<exp.what()<<")"<<endl;
+	}
 	catch (product_name_control &exp){
 		cout<<"Problem is ("<<exp.what()<<")"<<endl;
 		exp.return_name();
